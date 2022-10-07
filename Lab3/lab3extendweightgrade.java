@@ -1,4 +1,4 @@
-package lab4.zxsipromise.lab3;
+package lab.zxsipromise.lab3;
 
 public class lab3extendweightgrade {
     private int totalpoint; //instance private variables
