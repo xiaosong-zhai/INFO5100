@@ -34,7 +34,7 @@ public class lab3extendweightgrade2 {
                     System.out.println("You grade is not correct");
                 }
             } else{
-                System.out.println("The percentage is still left: " + sumper); // if not equal 1, output sum percentage
+                System.out.println("The percentage is now : " + sumper); // if not equal 1, output sum percentage
             }
 
             lab3extendweightgrade extendgrade = new lab3extendweightgrade();   //new extendgrade
