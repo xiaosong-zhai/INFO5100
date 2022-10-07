@@ -1,4 +1,4 @@
-package lab4.zxsipromise.lab3;
+package lab.zxsipromise.lab3;
 
 import java.util.Scanner;  //import scanner class
 
