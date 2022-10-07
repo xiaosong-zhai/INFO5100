@@ -6,8 +6,8 @@ public class lab3extendweightgrade {
     private double percentage;
     public void getgrade(int tp,double ea,double per)   //The getgrade method
     {
-        totalpoint = tp;
-        earnpoint = ea;
-        percentage = per;
+        this.totalpoint = tp;
+        this.earnpoint = ea;
+        this.percentage = per;
     }
 }
