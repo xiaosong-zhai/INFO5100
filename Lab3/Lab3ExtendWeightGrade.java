@@ -3,7 +3,16 @@ package lab4.zxsipromise.lab3;
 public class Lab3ExtendWeightGrade {
 
     private double finalGrade;          ////Instance variables
-    public Lab3ExtendWeightGrade (int[] totalPoint, double[] earnedPoint,double[] percentage){   //Constructor method
+
+    public double getFinalGrade() {
+        return finalGrade;
+    }
+
+    public void setFinalGrade(double finalGrade) {
+        this.finalGrade = finalGrade;
+    }
+
+    public Lab3ExtendWeightGrade (int[] totalPoint, double[] earnedPoint, double[] percentage){   //Constructor method
         double fG = getFinalGrade(totalPoint,earnedPoint,percentage);
         this.finalGrade = fG;
     }
@@ -26,6 +35,23 @@ public class Lab3ExtendWeightGrade {
             System.out.println("The total percentage is not equal 100%");
         }
         return finalGrade;
+    }
+
+    public static void calculate(double finalGrade) {
+        System.out.println("Your finalGrade is: " + finalGrade);
+        if (finalGrade >= 0.0 && finalGrade < 60.0) {
+            System.out.println("Your grade belongs to : " + 'F');
+        } else if (finalGrade >= 60.0 && finalGrade < 70.0) {
+            System.out.println("Your grade belongs to : " + 'D');
+        } else if (finalGrade >= 70.0 && finalGrade < 80.0) {
+            System.out.println("Your grade belongs to : " + 'C');
+        } else if (finalGrade >= 80.0 && finalGrade < 89.9999) {
+            System.out.println("Your grade belongs to : " + 'B');
+        } else if (finalGrade >= 90.0 && finalGrade <= 100.0) {
+            System.out.println("Your grade belongs to : " + 'A');
+        } else {
+            System.out.println("Your grade is not correct");
+        }
     }
 
 }

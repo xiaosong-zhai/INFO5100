@@ -38,25 +38,10 @@ public class Lab3ExtendWeightGrade2 {
          */
         Lab3ExtendWeightGrade extendgrade = new Lab3ExtendWeightGrade (totalPoint,earnedPoint,percentage);
         double fG = Lab3ExtendWeightGrade.getFinalGrade(totalPoint,earnedPoint,percentage);
-        System.out.println("Your final grade is: " + fG);
+//        System.out.println("Your final grade is: " + fG);
+        Lab3ExtendWeightGrade.calculate(fG);
 
 
-        /*
-        Calculate the final grade as above，the use if-else to to Judgm score interval and printout.
-         */
-        if (fG >= 0.0 && fG < 60.0) {
-                    System.out.println("you grade belongs to : " + 'F');
-                } else if (fG >= 60.0 && fG <70.0) {
-                    System.out.println("you grade belongs to : " + 'D');
-                } else if (fG >= 70.0 && fG <80.0) {
-                    System.out.println("you grade belongs to : " + 'C');
-                } else if (fG >= 80.0 && fG <80.9999) {
-                    System.out.println("you grade belongs to : " + 'B');
-                }else if (fG >= 90.0 && fG <=100.0){
-                    System.out.println("you grade belongs to : " + 'A');
-                }else {
-            System.out.println("You grade is not correct");
-                    }
 
     }
 }
