@@ -72,7 +72,7 @@ public class Lab4ExtendWeightedGrades {
             System.out.println("Your grade belongs to : " + 'D');
         } else if (finalGrade >= 70.0 && finalGrade <80.0) {
             System.out.println("Your grade belongs to : " + 'C');
-        } else if (finalGrade >= 80.0 && finalGrade <80.9999) {
+        } else if (finalGrade >= 80.0 && finalGrade <89.9999) {
             System.out.println("Your grade belongs to : " + 'B');
         }else if (finalGrade >= 90.0 && finalGrade <=100.0){
             System.out.println("Your grade belongs to : " + 'A');
