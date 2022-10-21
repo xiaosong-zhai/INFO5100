@@ -10,6 +10,7 @@ public class Lab4ExtendWeightedGrades2 {
    
      */
     public static void main(String[] args) {
+
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter the total points of the assignments in a row, Press SPACE to separate and ENTER to end");
         String inputStr1 = sc1.nextLine();
@@ -41,8 +42,8 @@ public class Lab4ExtendWeightedGrades2 {
                 System.out.println(percentageList);
 
                 lab4.Lab4ExtendWeightedGrades.determinper(assignList,percentageList);
-
-                lab4.Lab4ExtendWeightedGrades.calculate(assignList,earnedlist,percentageList);
+                Lab4ExtendWeightedGrades wg = new Lab4ExtendWeightedGrades();
+                lab4.Lab4ExtendWeightedGrades.calculate(wg.getfinalGrade(assignList,earnedlist,percentageList));
             }else {
                 System.out.println("The points your entered is not correct." + "\n"
                         + "1.The numbers of these elements need match the first row" + "\n"
@@ -53,6 +54,7 @@ public class Lab4ExtendWeightedGrades2 {
 
         }
     }
+
 
 }
 
