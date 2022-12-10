@@ -1,0 +1,73 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp label1::l::583:x}"
+			"$verticalGroup": "par l {comp label1::l::433:x}"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/images/图书馆.png" )
+			"title": "Admin"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 0, 21 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/booksBG.jpg" )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Book Manage"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+					"background": new java.awt.Color( 51, 102, 255, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/书籍管理.png" )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu1"
+						"text": "Book Category"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/图书分类.png" )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem1"
+							"text": "Add Category"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/图书种类添加.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addCateActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem3"
+							"text": "Maintain Category"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/种类维护工作.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mainCateActionPerformed", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu3"
+						"text": "Book Manage"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/图书管理.png" )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem2"
+							"text": "Add Book"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/添加图书.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBookActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem4"
+							"text": "Maintain Book"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/图书维护.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mainBookActionPerformed", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "Log Out"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/退出.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 585, 490 )
+			"location": new java.awt.Point( 35, 135 )
+		} )
+	}
+}

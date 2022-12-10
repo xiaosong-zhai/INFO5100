@@ -1,0 +1,136 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane1::t::583:x, seq {par l {seq {space :p:58:p, comp label1:::p:79:p, space :::p, comp searchText:::p:222:p, space :p:27:p, comp searchButton:::p:114:p}, seq l {space :p:48:p, par l {seq {par l {comp label2:::p:97:p, comp label4:::p:106:p}, space ::47:x, par l {comp cateIdText::t:p:331:p, comp cateDescText::t:p:331:p}}, seq {par l {comp label3:::::x, seq l {comp modifyButton:::p:114:p, space :0:33:x}}, space :::p, par l {comp cateNameText:::p:331:p, comp deleteButton::t:p:114:p}}}}}, space :p:51:p}}"
+			"$verticalGroup": "par l {seq l {space :p:21:p, par b {comp label1::b:p:32:p, comp searchText::b:p:32:p, comp searchButton::b:p:33:p}, space s:::p, comp scrollPane1:::p:185:p, space s:::p, par b {comp label2::b:p:27:p, comp cateIdText::b:p::p}, space :::p, par b {comp label3::b:p:27:p, comp cateNameText::b:p:64:p}, space :p:4:p, par b {comp label4::b:p:27:p, comp cateDescText::b:p:64:p}, space :::p, par b {comp deleteButton::b:p:33:p, comp modifyButton::b:p:33:p}, space ::19:x}}"
+		} ) {
+			name: "this"
+			"title": "Maintain Category"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Search"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchText"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searchButton"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "" )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "ID" )
+						add( "Category Name" )
+						add( "Category Desc" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table1MousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Category ID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Category Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Category Desc"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cateIdText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cateNameText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cateDescText"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "modifyButton"
+				"text": "Modify"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "modifyActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteButton"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 95 )
+			"size": new java.awt.Dimension( 585, 530 )
+		} )
+	}
+}
