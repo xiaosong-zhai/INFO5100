@@ -8,6 +8,7 @@ INFO5100 21360 Application Engineer & Dev SEC 09 Fall 2022 [SEA-2-TR]
 2. JDK 18
 3. SQL MYSQL 8
 ## SQL Connection
+If network enable ipv6, just run main.java to run program and connection my mysql.
 - Domain Name : ipromise.dynv6.net (**Enable ipv6 network**)  
 Port : 3306
 - OR Execute .sql file and change config file in src/com/zxsipromise/utils/JDBCUtils.java
