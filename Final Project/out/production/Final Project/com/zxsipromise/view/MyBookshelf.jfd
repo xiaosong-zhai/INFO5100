@@ -1,0 +1,157 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane1::l::593:x, seq {par l {seq {space :p:50:p, par l {comp label4:::p::p, comp label5:::p:68:p}, space :::p, par l:::p {comp PriceText::::160:x, comp bookNameText::::160:x}, space :p:70:p, par l:::p {seq l {comp label2:::p::p, space :::p, comp AuthorText:::::x}, seq l {comp label3:::p::p, space :::p, comp BorrowDateText:::p:172:p}}}, seq l {space :p:197:p, comp button1:::p::p}}, space ::17:x}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane1:::p:191:p, space ::54:x, par b {comp label4::b:p:35:p, comp label2::b:p::p, comp AuthorText::b:p::p, comp bookNameText::b:p::p}, space :p:43:p, par b {comp label5::b:p::p, comp label3::b:p::p, comp BorrowDateText::b:p::p, comp PriceText::b:p::p}, space :p:30:p, comp button1:::p:51:p, space :p:23:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "MyBookshelf"
+			"resizable": true
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( "" )
+							add( "" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "" )
+							add( "" )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "ID" )
+						add( "BookName" )
+						add( "Author" )
+						add( "Price" )
+						add( "BorrowDate" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table1MousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "BookName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookNameText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Price"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "PriceText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "AuthorText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Author"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Borrow"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "BorrowDateText"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Return Book"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/图书归还中.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 115 )
+			"size": new java.awt.Dimension( 595, 485 )
+		} )
+	}
+}

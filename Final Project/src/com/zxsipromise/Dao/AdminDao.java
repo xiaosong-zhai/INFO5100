@@ -11,7 +11,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+Encapsulate the method used by the admin account
+ */
 public class AdminDao {
 
     public static BookType selectBookTypeName(String bookTypeName) {

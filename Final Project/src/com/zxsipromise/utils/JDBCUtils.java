@@ -3,6 +3,10 @@ package com.zxsipromise.utils;
 import java.sql.*;
 
 public class JDBCUtils {
+    /*
+    jdbc connection config
+    try to connection to mysql
+     */
     public static Connection getConnection(){
         Connection ct = null;
         Statement sm = null;

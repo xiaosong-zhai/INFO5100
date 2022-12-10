@@ -4,6 +4,7 @@ import com.zxsipromise.view.LoginFrame;
 
 import java.awt.*;
 /**
+ * to run this program
  * @author xiaosong zhai
  */
 

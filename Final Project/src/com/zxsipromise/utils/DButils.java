@@ -10,15 +10,21 @@ import java.util.List;
 import java.util.Map;
 
 public class DButils {
+    /*
+    connect mysql then update any sql statement for any table in database
+     */
     public static int jdbc_update(String sql, Object... objects){
         Connection conn = JDBCUtils.getConnection();
         PreparedStatement ps = null;
         int i = 0;
         try {
+            //Precompiled
             ps = conn.prepareStatement(sql);
+            //assign value to sql
             for (int j = 0; j < objects.length; j++) {
                 ps.setObject(j + 1, objects[j]);
             }
+            //execute sql
             i = ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -27,7 +33,9 @@ public class DButils {
         }
         return i;
     }
-
+    /*
+    connect mysql then Query any field in any table
+     */
     public static <T> List<T> jdbc_select(String sql, Class<T> classes, Object... objects){
         Connection conn = JDBCUtils.getConnection();
         PreparedStatement ps = null;

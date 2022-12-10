@@ -14,7 +14,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+/*
+Encapsulate the method used by the user account
+ */
 public class UserDao {
     public static List<User> login(String name, String pwd, String userid){
         String sql ="select * from t_user where userName =? and password =? and userid =?";
