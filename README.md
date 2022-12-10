@@ -13,8 +13,8 @@ Port : 3306
 - OR Execute .sql file and change config file in src/com/zxsipromise/utils/JDBCUtils.java
 ## Project info
 ### User Account
-Username: user 
+Username: user  
 Password: 123123  
 ### Admin Account
-Username: zxs 
+Username: zxs  
 Password: zxs123123  
