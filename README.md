@@ -11,4 +11,4 @@ INFO5100 21360 Application Engineer & Dev SEC 09 Fall 2022 [SEA-2-TR]
 ## SQL Connection
 Domain Name : ipromise.dynv6.net
 Port : 3306
-**Note : Enable ipv6 network**
+Note : Enable ipv6 network
