@@ -1,0 +1,41 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par t {seq t {space :::p, comp confirmButton:::p:121:p}, seq l {space :p:70:p, par t {comp label2:::p:121:p, comp label1:::p:121:p}}}, space :::p, par t {par l {comp cateDescText:::p:318:p, comp bookCateText:::p:318:p}, comp resetButton:::p:121:p}, space ::38:x}}"
+			"$verticalGroup": "par l {seq l {space :p:60:p, par b {comp label1::b:p:64:p, comp bookCateText::b:p:37:p}, space :p:51:p, par b {comp label2::b:p:64:p, comp cateDescText::b:p:92:p}, space ::29:x, par b {comp confirmButton::b:p:49:p, comp resetButton::b:p:49:p}, space :p:54:p}}"
+		} ) {
+			name: "this"
+			"title": "AddCategory"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Book Category"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Category Desc"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cateDescText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookCateText"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "confirmButton"
+				"text": "Confirm"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "confirmActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "resetButton"
+				"text": "Reset"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 25, 90 )
+			"size": new java.awt.Dimension( 555, 430 )
+		} )
+	}
+}

@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par l {seq {space :43:43:p, par l {comp label1:::p:76:p, comp label3::t:p:76:p}}, seq t {space :::p, par l {comp label5::t:p:76:p, comp label6::t:p:76:p}}}, space :::p, par l:::p {seq {par l {seq {comp Male:::p::p, space s:::p, comp Female:::p::p}, comp bookNameText:::p:129:p}, space :p:41:p, par t {comp label2:::p:59:p, comp label4:::p:59:p}, space :::p, par l {comp authorText:::p:129:p, comp priceText:::p:129:p}}, comp bookTypeComboBox::l:p:126:p, comp bookDescText:::::x}, space ::22:x}, seq l {space :p:43:p, comp confrimButton:::p:101:p, space ::236:x, comp resetButton:::p:101:p, space :p:42:p}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, par b {comp label1::b:p:27:p, comp authorText::b:p::p, comp label2::b:p:27:p, comp bookNameText::b:p::p}, space s:::p, par b {comp label3::b:p:27:p, comp Male::b:p::p, comp Female::b:p::p, comp priceText::b:p::p, comp label4::b:p:27:p}, space :p:19:p, par b {comp label5::b:p:27:p, comp bookTypeComboBox::b:p::p}, space :p:62:p, par b {comp label6::b:p:27:p, comp bookDescText::b:p:85:p}, space ::45:x, par b {comp confrimButton::b:p:42:p, comp resetButton::b:p:42:p}, space :p:33:p}}"
+		} ) {
+			name: "this"
+			"title": "Add Book"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "BookName"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Author"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "Male"
+				"text": "Male"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "Female"
+				"text": "Female"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookNameText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Sex"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "authorText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Price"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "priceText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Category"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "bookTypeComboBox"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "BookDesc"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookDescText"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "confrimButton"
+				"text": "Confrim"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "confrimActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "resetButton"
+				"text": "Reset"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 50, 140 )
+			"size": new java.awt.Dimension( 525, 435 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 175, 595 )
+		} )
+	}
+}
